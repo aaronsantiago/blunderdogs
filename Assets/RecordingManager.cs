@@ -5,10 +5,10 @@ using UnityEngine;
 public class RecordingManager : MonoBehaviour
 {
     public static Dictionary<string, Dictionary<string, List<TransformData>>> Recordings = new Dictionary<string, Dictionary<string, List<TransformData>>>();
+
+    public static int MaxRecordingFrames = 90;
     public static Dictionary<string, RecordObjectsEvent> isRecording = new Dictionary<string, RecordObjectsEvent>();
     public static Dictionary<string, bool> wasRecording = new Dictionary<string, bool>();
-
-    public static Dictionary<string, AudioClip> AudioRecordings = new Dictionary<string, AudioClip>();
 
     public bool OverwriteRecordings = true;
 
@@ -32,7 +32,6 @@ public class RecordingManager : MonoBehaviour
                         Debug.Log("Name: " + device);
                     }
 
-                    AudioRecordings[RecordingName] = Microphone.Start(targetDevice, true, 10, 44100);
                     if (OverwriteRecordings) Recordings[RecordingName] = new Dictionary<string, List<TransformData>>();
                 }
                 if (!Recordings.ContainsKey(RecordingName))
