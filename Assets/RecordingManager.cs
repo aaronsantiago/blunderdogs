@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct TransformData
+{
+    public Vector3 position;
+    public Quaternion rotation;
+}
+
 public class RecordingManager : MonoBehaviour
 {
     public static Dictionary<string, Dictionary<string, List<TransformData>>> Recordings = new Dictionary<string, Dictionary<string, List<TransformData>>>();
 
     public static int MaxRecordingFrames = 90;
-    public static Dictionary<string, RecordObjectsEvent> isRecording = new Dictionary<string, RecordObjectsEvent>();
+    public static List<string> RecordingNames = new List<string>();
+    public static int MaxRecords = 4;
+    public static Dictionary<string, List<Transform>> isRecording = new Dictionary<string, List<Transform>>();
     public static Dictionary<string, bool> wasRecording = new Dictionary<string, bool>();
 
     public bool OverwriteRecordings = true;
@@ -33,12 +41,22 @@ public class RecordingManager : MonoBehaviour
                     }
 
                     if (OverwriteRecordings) Recordings[RecordingName] = new Dictionary<string, List<TransformData>>();
+                
+                    if (isRecording.Keys.Count > MaxRecords)
+                    {
+                        string oldestRecording = RecordingNames[0];
+                        RecordingNames.RemoveAt(0);
+                        Recordings.Remove(oldestRecording);
+                        isRecording.Remove(oldestRecording);
+                        wasRecording.Remove(oldestRecording);
+                        RecordingNames.Add(RecordingName);
+                    }
                 }
                 if (!Recordings.ContainsKey(RecordingName))
                 {
                     Recordings[RecordingName] = new Dictionary<string, List<TransformData>>();
                 }
-                foreach (Transform transform in isRecording[RecordingName].TransformsToRecord)
+                foreach (Transform transform in isRecording[RecordingName])
                 {
                     if (!Recordings[RecordingName].ContainsKey(transform.name))
                     {
