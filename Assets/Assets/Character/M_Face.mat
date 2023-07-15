@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Face:
-        m_Texture: {fileID: 2800000, guid: 1cc8abd0ff862f2428adbc5ca60d105d, type: 3}
+        m_Texture: {fileID: 2800000, guid: b7f34317903c8e34ab92ba37af1aea4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -83,6 +83,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_3e6eeec85d704bfc9f25856e11043f24_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 1a7f1ffab95e45e41b4ebbfba0c6fe5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_735909cd677145e2918881f41c3056e3_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0eb3cb91e50976b48a9b639c712a4465, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8ce8389ad01c4bbcbc6d5fef198b7ef8_Texture_1_Texture2D:
