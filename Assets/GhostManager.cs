@@ -11,7 +11,7 @@ public class GhostManager : MonoBehaviour
 
     string RecordingName = "";
 
-    string PrevSceneName = "";
+    static string PrevSceneName = "";
 
     void Start()
     {
