@@ -8,6 +8,7 @@ public class Resetter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Respawn")) {
+            GhostManager.Instance.StopRecording();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

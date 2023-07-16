@@ -14,7 +14,7 @@ public class RecordingManager : MonoBehaviour
 
     public static int MaxRecordingFrames = 90;
     public static List<string> RecordingNames = new List<string>();
-    public static int MaxRecords = 4;
+    public static int MaxRecords = 2;
     public static Dictionary<string, List<Transform>> isRecording = new Dictionary<string, List<Transform>>();
     public static Dictionary<string, bool> wasRecording = new Dictionary<string, bool>();
 
@@ -33,12 +33,6 @@ public class RecordingManager : MonoBehaviour
                 if (!wasRecording[RecordingName])
                 {
                     wasRecording[RecordingName] = true;
-                    string targetDevice = "";
-                    foreach (var device in Microphone.devices)
-                    {
-                        if (targetDevice == "") targetDevice = device;
-                        Debug.Log("Name: " + device);
-                    }
 
                     if (OverwriteRecordings) Recordings[RecordingName] = new Dictionary<string, List<TransformData>>();
                 
@@ -49,8 +43,8 @@ public class RecordingManager : MonoBehaviour
                         Recordings.Remove(oldestRecording);
                         isRecording.Remove(oldestRecording);
                         wasRecording.Remove(oldestRecording);
-                        RecordingNames.Add(RecordingName);
                     }
+                    RecordingNames.Add(RecordingName);
                 }
                 if (!Recordings.ContainsKey(RecordingName))
                 {
@@ -66,6 +60,10 @@ public class RecordingManager : MonoBehaviour
                     data.position = transform.localPosition;
                     data.rotation = transform.localRotation;
                     Recordings[RecordingName][transform.name].Add(data);
+                    if (Recordings[RecordingName][transform.name].Count > MaxRecordingFrames)
+                    {
+                        Recordings[RecordingName][transform.name].RemoveAt(0);
+                    }
                 }
             }
             else
