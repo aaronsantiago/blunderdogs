@@ -7196,7 +7196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3226087236744710439}
   m_Layer: 0
-  m_Name: Environment - Maze
+  m_Name: Environment - Narrow
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
