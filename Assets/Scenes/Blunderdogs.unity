@@ -138,7 +138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -150,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -158,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -170,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1049,6 +1049,11 @@ PrefabInstance:
       propertyPath: Environment
       value: 
       objectReference: {fileID: 7686124833383595938}
+    - target: {fileID: 266020256373738114, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2039952772892778711, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       propertyPath: m_Name
@@ -1057,7 +1062,29 @@ PrefabInstance:
     - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       propertyPath: m_text
-      value: welcome to blunderdogs, touch here to start
+      value: 'Welcome to the
+
+        Quarter-Life Carnival!
+
+        Touch here
+        to start
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3731610727893142201, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
@@ -1109,6 +1136,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5346598047923714419, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6006455801298053642, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1143,6 +1175,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2586000742017521381, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4726653007682518668, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       insertIndex: -1
@@ -1659,6 +1695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment - Maze
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240983475850961833, guid: b31fc32309b057e4ebd1559721d728d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
