@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.3490566, g: 0.33094516, b: 0.33094516, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06632927, g: 0.04473024, b: 0.029333012, a: 1}
+  m_IndirectSpecularColor: {r: 0.0661649, g: 0.044610824, b: 0.029344566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1143,10 +1143,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2586000742017521381, guid: 51c6f6096efd337468cecb3882cde785,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4726653007682518668, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       insertIndex: -1
@@ -1609,16 +1605,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 753584945572051215, guid: b31fc32309b057e4ebd1559721d728d5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.673
-      objectReference: {fileID: 0}
-    - target: {fileID: 753584945572051215, guid: b31fc32309b057e4ebd1559721d728d5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.71
-      objectReference: {fileID: 0}
     - target: {fileID: 3226087236744710439, guid: b31fc32309b057e4ebd1559721d728d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1672,17 +1658,10 @@ PrefabInstance:
     - target: {fileID: 6240983475850961833, guid: b31fc32309b057e4ebd1559721d728d5,
         type: 3}
       propertyPath: m_Name
-      value: Environment (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6240983475850961833, guid: b31fc32309b057e4ebd1559721d728d5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: Environment - Maze
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8036515957543128224, guid: b31fc32309b057e4ebd1559721d728d5, type: 3}
-    - {fileID: 6914161833997788090, guid: b31fc32309b057e4ebd1559721d728d5, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b31fc32309b057e4ebd1559721d728d5, type: 3}
@@ -1787,11 +1766,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1009224108}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5551842118458852545, guid: 05ff62c39da69684c937558b083453f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05ff62c39da69684c937558b083453f0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
