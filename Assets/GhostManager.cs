@@ -11,9 +11,20 @@ public class GhostManager : MonoBehaviour
 
     string RecordingName = "";
 
+    string PrevSceneName = "";
+
     void Start()
     {
         Instance = this;
+
+        if(PrevSceneName != UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
+        {
+            PrevSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            RecordingManager.Recordings.Clear();
+            RecordingManager.RecordingNames.Clear();
+            RecordingManager.isRecording.Clear();
+            RecordingManager.wasRecording.Clear();
+        }
 
         foreach (var RecordingName in RecordingManager.Recordings.Keys)
         {
