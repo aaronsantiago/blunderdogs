@@ -9,6 +9,7 @@ public class StartObstacleCourse : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        GhostManager.Instance.SpawnAllReplays();
         GhostManager.Instance.StartRecording();
         Environment.SetActive(true);
         Intro.SetActive(false);

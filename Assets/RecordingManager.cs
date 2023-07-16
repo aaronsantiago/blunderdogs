@@ -60,6 +60,10 @@ public class RecordingManager : MonoBehaviour
                     data.position = transform.localPosition;
                     data.rotation = transform.localRotation;
                     Recordings[RecordingName][transform.name].Add(data);
+                    if (Recordings[RecordingName][transform.name].Count > MaxRecordingFrames)
+                    {
+                        Recordings[RecordingName][transform.name].RemoveAt(0);
+                    }
                 }
             }
             else
