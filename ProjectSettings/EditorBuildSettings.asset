@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Blunderdogs.unity
     guid: cd8c2ad0b79b33447b0871723d517353
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Blunderdogs_Lvl2.unity
     guid: 72555143809fc014a8c2bf83df740252
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ending.unity
     guid: 12bca273fa9de8b43aeb56653e5a8049
+  - enabled: 0
+    path: Assets/Scenes/EnvironmentTestScene.unity
+    guid: eb0e544c8caa52d4fb2eeab4df6c1ca6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94db8f1cb7c86e94ba658ab71deac634,
       type: 2}
