@@ -7,9 +7,16 @@ public class PlaySoundOnSceneStart : MonoBehaviour
     static bool firstLoadComplete = false;
     AudioSource audioSource;
 
+    static string PrevSceneName = "";
+
     // Start is called before the first frame update
     void Start()
     {
+        if(PrevSceneName != UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
+        {
+            PrevSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            firstLoadComplete = false;
+        }
         if (!firstLoadComplete)
         {
             firstLoadComplete = true;
