@@ -1270,10 +1270,40 @@ PrefabInstance:
       propertyPath: Environment
       value: 
       objectReference: {fileID: 7946095134779264116}
+    - target: {fileID: 266020256373738114, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2039952772892778711, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       propertyPath: m_Name
       value: Intro_Lvl2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_text
+      value: 'You made it to Level 2!
+
+        Touch here to start
+
+        Insomnia
+        Gauntlet'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685271930655399822, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3731610727893142201, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
@@ -1325,6 +1355,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5346598047923714419, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6087571086803165409, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       propertyPath: TriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1339,6 +1374,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2586000742017521381, guid: 51c6f6096efd337468cecb3882cde785,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4726653007682518668, guid: 51c6f6096efd337468cecb3882cde785,
         type: 3}
       insertIndex: -1
